@@ -5,7 +5,8 @@ spring:
     client:
       service-url: pulsar://localhost:6650
     producer:
-      topic-name: migeri-plain-topic
+      topic-name-0: migeri-plain-topic
+      topic-name-1: migeri-raw-topic
 server:
   port:
     9191

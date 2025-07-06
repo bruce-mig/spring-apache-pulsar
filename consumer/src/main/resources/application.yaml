@@ -7,7 +7,13 @@ spring:
     consumer:
       subscription:
         name: my-subscription
-      topic-name: migeri-plain-topic
+      topic-name-0: migeri-plain-topic
+      topic-name-1: migeri-raw-topic
+    defaults:
+      type-mappings:
+        - messageType: com.github.bruce_mig.spring_apache_pulsar.commons.dto.Customer
+          schema-info:
+            schema-type: JSON
 
 server:
   port: 9192
