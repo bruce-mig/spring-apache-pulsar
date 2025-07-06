@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: consumer
+  pulsar:
+    client:
+      service-url: pulsar://localhost:6650
+    consumer:
+      subscription:
+        name: my-subscription
+      topic-name: migeri-plain-topic
+
+server:
+  port: 9192

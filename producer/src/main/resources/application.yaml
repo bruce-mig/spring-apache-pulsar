@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: producer
+  pulsar:
+    client:
+      service-url: pulsar://localhost:6650
+    producer:
+      topic-name: migeri-plain-topic
+server:
+  port:
+    9191
