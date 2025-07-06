@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.bruce-mig.spring-apache-pulsar</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>commons</name>
 	<description>Pulsar Commons</description>
 	<url/>
@@ -29,11 +29,15 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/bruce-mig/spring-apache-pulsar</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-pulsar</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -50,6 +54,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/bruce-mig/spring-apache-pulsar</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -69,6 +80,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<classifier>exec</classifier>
+					<skip>true</skip> <!-- This prevents packaging as executable -->
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
