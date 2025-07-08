@@ -30,3 +30,13 @@ sudo chown -R 10000 data
 To create a Pulsar cluster by using the compose.yml file, run the following command.
 
 ` docker compose -f cluster-compose.yaml up -d`
+
+For standalone use:
+
+`docker compose -f standalone-compose.yaml up -d`
+
+You can access the pulsar manager at http://localhost:9527
+
+#### Starting the application
+
+You can find the swagger url for the producer at `http://localhost:9191/swagger-ui/index.html`
