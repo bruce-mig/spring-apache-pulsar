@@ -108,7 +108,7 @@ Swagger UI: http://localhost:9191/swagger-ui/index.html
 [Pulsar Manager](https://github.com/apache/pulsar-manager)  
 
 ## License
-This project is licensed under the [MIT License](LICENCE).
+This project is licensed under the [MIT License](LICENCE).  
 
-Contributing
+## Contributing
 Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
