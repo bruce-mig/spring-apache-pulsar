@@ -1,6 +1,6 @@
 services:
   pulsar:
-    image: "apachepulsar/pulsar:3.3.7"
+    image: "apachepulsar/pulsar:4.0.5"
     command: bin/pulsar standalone
     environment:
       PULSAR_MEM: "-Xms512m -Xmx512m -XX:MaxDirectMemorySize=1g"
