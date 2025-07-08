@@ -107,7 +107,7 @@ services:
     environment:
       SPRING_CONFIGURATION_FILE: /pulsar-manager/pulsar-manager/application.properties
     networks:
-      - pulsar_network
+      - pulsar
 networks:
   pulsar:
     driver: bridge
